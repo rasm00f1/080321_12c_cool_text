@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 40vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+
+  font-size: 48px;
+
+  color: white;
+}
+
+.cooltext {
+  display: inline-block;
+}
+
+.letter {
+  --delay: 0;
+  animation: letter_kf 1s cubic-bezier(0.66, 0.06, 0.26, 1.28);
+  animation-fill-mode: both;
+  animation-delay: calc(var(--delay) * 0.02s);
+}
+
+@keyframes letter_kf {
+  0% {
+    opacity: 0;
+    transform: translateY(4vw);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0vw);
+  }
+}
